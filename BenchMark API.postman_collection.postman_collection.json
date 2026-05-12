@@ -1,0 +1,966 @@
+{
+  "info": {
+    "_postman_id": "33760d66-468e-4dc6-b007-e6d93166b171",
+    "name": "BenchMark API.postman_collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51841384",
+    "_collection_link": "https://go.postman.co/collection/51841384-33760d66-468e-4dc6-b007-e6d93166b171?source=collection_link"
+  },
+  "item": [
+    {
+      "name": " Register User",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Priyanka\",\n    \"username\": \"priyanka3\",\n    \"password\": \"password123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/user",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"priyanka\",\n    \"password\": \"password123\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Category ",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzg4NTI1NywiZXhwIjoxNzc3OTcxNjU3fQ.5ISEiODCrBmZng_ASKk_eHcCJasitMw6gJLKB77NMGFGp8entMnyKwX6vRgppQr6QI3P6aS76vnGvIUFOApJpg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Upper Body\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/categories",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "categories"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Muscle",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Bicep\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/muscles",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "muscles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Muscle Duplicate",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Bicep\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/muscles",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "muscles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Muscle Empty",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/muscles",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "muscles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Muscle",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/muscles",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "muscles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Muscle By Id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/muscles/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "muscles",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Muscle By Id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/muscles/99",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "muscles",
+            "99"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Exercise",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Bicep Curl\", \n    \"isMachine\": false, \n    \"categoryId\": 1, \n    \"muscleIds\": [1]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/exercises",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "exercises"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Duplicate Exercise",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Bicep Curl\", \n    \"isMachine\": false, \n    \"categoryId\": 1, \n    \"muscle_ids\": [1]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/exercises",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "exercises"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Exercise",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Test\", \n    \"isMachine\": false, \n    \"categoryId\": 99, \n    \"muscle_ids\": [1]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/exercises",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "exercises"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Exercise",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Test\", \n    \"isMachine\": false, \n    \"categoryId\": 1, \n    \"muscle_ids\": [99]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/exercises",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "exercises"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Exercises",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Test\", \n    \"isMachine\": false, \n    \"categoryId\": 1, \n    \"muscle_ids\": [99]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/exercises",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "exercises"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Exercise By Id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Test\", \n    \"isMachine\": false, \n    \"categoryId\": 1, \n    \"muscle_ids\": [99]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/exercises/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "exercises",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Workout Session",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Push Day\", \n    \"date\": \"2026-05-04\", \n    \"startTime\": \"09:00:00\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/workout-session",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "workout-session"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Workout Session Missing Date",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Push Day\", \n    \"startTime\": \"09:00:00\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/workout-session",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "workout-session"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Workout Sessions",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Push Day\", \n    \"startTime\": \"09:00:00\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/workout-session",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "workout-session"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Workout Session By Id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Push Day\", \n    \"startTime\": \"09:00:00\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/workout-session/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "workout-session",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Workout Exercise",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"exerciseId\": 1, \n    \"sessionId\": 1, \n    \"sets\": 3, \n    \"reps\": 10, \n    \"weight\": 20.0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/workout-exercise",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "workout-exercise"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Workout Exercise Invalid Id",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"exerciseId\": 99, \n    \"sessionId\": 1, \n    \"sets\": 3, \n    \"reps\": 10, \n    \"weight\": 20.0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/workout-exercise",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "workout-exercise"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Workout Exercise Invalid Session Id",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"exerciseId\": 1, \n    \"sessionId\": 99, \n    \"sets\": 3, \n    \"reps\": 10, \n    \"weight\": 20.0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/workout-exercise",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "workout-exercise"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Workout Exercise By Id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"exercise_id\": 1, \n    \"session_id\": 99, \n    \"sets\": 3, \n    \"reps\": 10, \n    \"weight\": 20.0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/workout-exercise/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "workout-exercise",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Workout Exercise ",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcml5YW5rYSIsImlhdCI6MTc3Nzk1ODAyMSwiZXhwIjoxNzc4MDQ0NDIxfQ.x89zvhJLeN0zMQsUqazDcy8_iA8geJnyxKhGOTmQVoK6-QYBZp5ZnaX80L6YN4-pQgMSCNpSJdRRgKKF-O-rjg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"exercise_id\": 1, \n    \"session_id\": 99, \n    \"sets\": 3, \n    \"reps\": 10, \n    \"weight\": 20.0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/workout-exercise",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "workout-exercise"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
